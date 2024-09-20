@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=VT323&display=swap');
+
+:root{
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body{
+    background: #f1f1f1;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+
+
+
+/* Navbar */
+
+.nav_container {
+    background: #fff;
+    margin: 0 auto;
+    padding: 1.5rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.nav_head{
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/* workout Details */
+
+.home{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 2.5rem 8%;
+}
+
+.home_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.workout_details{
+  background: #fff;
+  border-radius: 4px;
+  margin: 2rem 0;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.workout_details h3{
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.workout_details p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.workout_details span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--error);
+  cursor: pointer;
+  margin: 1%;
+}
+.workout_details button{
+  padding: 0.5% 1.5%;
+  margin-top: 1%;
+}
+
+
+/*Workout*/
+/* Workout Form styling */
+.workoutForm {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+/* Label and Input Styling */
+.workoutForm label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.workoutForm input {
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* Button Styling */
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #12866c;
+}
+
+/* Flexbox layout for input fields */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fields label {
+  flex: 1;
+}
+
+.form-fields input {
+  width: 100%;
+}
+
+
+
+
+/**/
+/* Styling for the workout update form */
+.workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.workout-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.workout-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.workout-form input::placeholder {
+  font-style: italic;
+  color: #888;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.submit-btn {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cancel-btn:hover {
+  background-color: #e53935;
+}
